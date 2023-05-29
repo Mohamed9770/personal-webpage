@@ -3,7 +3,7 @@ import data from "./data.json";
 import { defineConfig } from 'vite';
 
  export default defineConfig ({
-    base : '/<REPO>/',
+    base : '/personal-webpage/',
     build: {
         rollupOptions: {
             input : {
