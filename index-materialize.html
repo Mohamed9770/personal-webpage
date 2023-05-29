@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        body {
+    color:hsl(33, 100%, 88%);
+    background-color: rgba(0, 0, 0, 0.378);
+    
+        }
+        table tr td{
+            color:bisque;
+        }
+        h1{text-align: center;
+        color:aquamarine
+        }
+        h2{color:aquamarine}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Hello & Welcome</h1>
+   
+    <br>
+    <hr>
+    <br>
+    
+        <div class="row">
+            <div class="col s12 m4 l6">
+                <h2>{{user.fullName}}</h2>
+                <p>Hi! I'm Mohamed 😄, an Electrical & Electronic Engineer currently doing my master's in Sustainable Energy. I'm a huge Barca fan, "cule," 😅 which hasn't been good for my mental health for the past few seasons😂 I also play soccer DM "Busquets." I'm passionate about Arabic poetry; I always read for famous Arab poets. I also love music and consider myself a good Guitar player. My favorite hobby is video gaming; I play COD in my spare time; if you think you're good at COD, stay quiet until you play me 😁.</p>
+            </div>
+            <div class="col s12 m4 l4">
+                <img src={{user.photo}} alt="me" class="circle responsive-img">
+            </div>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="row">
+            <h2>Bali, Indonesia</h2>
+            <div class="col s12 m4 l6">
+                
+                <img class="responsive-img" src={{city.photo}} alt="Bali">
+            </div>
+            <div class="col s12 m4 l4">
+                <p>{{city.description}}</p>
+                
+            </div>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="col-md">
+            <h2>{{foreignLanguage.language}}</h2>
+            <p>I choose Spanish because it's the second most spoken language in the world, and it is one of the most widespread languages. Spanish is the official language in 20 countries around the world. In the US alone, approximately 41 million people speak Spanish, which makes it a widespread language. Here are some phrases from Spanish:</p>
+            <table class="table table-bordered">
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    
+                    <td>{{foreignPhrase}}</td>
+                    <td>{{englishPhrase}}</td>
+                    
+                </tr>
+                {{/each}}
+            </table>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <h2>Favorite Subjects</h2>
+            {{#each favouriteSubjects}}
+            <div  class="card-panel teal lighten-2">
+                
+                <p>{{name}}</p>
+                <p>{{description}}</p>
+                
+            </div>
+            
+            {{/each}}
+        </div>
+        <br>
+        <hr>
+        <br>
+        <button><a href="index.html" style="color:rgb(20, 44, 86);" style="text-align: center;">main page</a></button>
+        <button><a href="index-bootstrap.html" style="color:rgb(17, 39, 76);" style="text-align: center;">bootstrap page</a></button>
+        
+    <br>
+    <br>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+    "intro": {
+        "title":"Hello & Welcome"
+    },
+    "user" : {
+        "fullName": "Mohamed Bakhit",
+        "photo" : "mohamed.jpg"
+    },
+    "city" : {
+        "name" : "Bali, Indonisia",
+        "photo" : "bali.jpg",
+        "description" : "Bali, Indonesia. Bali has nearly every form of natural beauty, in addition to breathtaking beaches and enchanted temples. The island is made up of magnificent mountainous regions with lush vegetation, attractive lakes, breathtaking waterfalls, famous rice fields, flower gardens, gushing sacred rivers, and mysterious canyons."
+    },
+    "foreignLanguage" : {
+        "language" : "Spanish",
+        "phrases" : [{
+            "englishPhrase" : "Thank you so much",
+            "foreignPhrase" : "Muchas gracias"
+        },
+        {
+            "englishPhrase" : "You’re welcome",
+            "foreignPhrase" : "De nada"
+        },
+        {
+          "englishPhrase" : "Goodbye",
+          "foreignPhrase" : "Adios "
+      }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "EE&GB",
+            "description" : "Energy Efficiency & Green Buildings"
+        },
+        {
+            "name" : "Geopolitics of Energy",
+            "description" : "geographical and political aspects of energy"
+        }]
+  }
